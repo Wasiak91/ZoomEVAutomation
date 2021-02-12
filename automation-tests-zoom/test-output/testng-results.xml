@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-09T23:34:04 CET" name="AllTests" finished-at="2021-02-09T23:34:26 CET" duration-ms="21130">
+    <groups>
+    </groups>
+    <test started-at="2021-02-09T23:34:04 CET" name="redirectionsBenefitsToHomepage" finished-at="2021-02-09T23:34:26 CET" duration-ms="21130">
+      <class name="com.zoomev.BenefitsRedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.BenefitsRedirectionTests@5dd6264]" started-at="2021-02-09T23:34:04 CET" name="setUp" finished-at="2021-02-09T23:34:08 CET" duration-ms="3485" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="BenefitsRedirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.BenefitsRedirectionTests@5dd6264]" started-at="2021-02-09T23:34:08 CET" name="BenefitsRedirection" finished-at="2021-02-09T23:34:25 CET" duration-ms="16983" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/ev-benefits]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//img[@alt='zoom logo colour long']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - Home]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BenefitsRedirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.BenefitsRedirectionTests@5dd6264]" started-at="2021-02-09T23:34:25 CET" name="tearDown" finished-at="2021-02-09T23:34:26 CET" duration-ms="634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.BenefitsRedirectionTests -->
+    </test> <!-- redirectionsBenefitsToHomepage -->
+  </suite> <!-- AllTests -->
+</testng-results>

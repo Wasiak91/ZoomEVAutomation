@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="20" passed="14" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-09T23:34:04 CET" name="AllTests" finished-at="2021-02-09T23:34:26 CET" duration-ms="21130">
+  <suite started-at="2021-02-15T16:47:30 CET" name="AllTests" finished-at="2021-02-15T16:50:24 CET" duration-ms="173651">
     <groups>
     </groups>
-    <test started-at="2021-02-09T23:34:04 CET" name="redirectionsBenefitsToHomepage" finished-at="2021-02-09T23:34:26 CET" duration-ms="21130">
-      <class name="com.zoomev.BenefitsRedirectionTests">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.BenefitsRedirectionTests@5dd6264]" started-at="2021-02-09T23:34:04 CET" name="setUp" finished-at="2021-02-09T23:34:08 CET" duration-ms="3485" status="PASS">
+    <test started-at="2021-02-15T16:47:30 CET" name="redirectionsBenefitsToHomepage" finished-at="2021-02-15T16:47:51 CET" duration-ms="20270">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@5dd6264]" started-at="2021-02-15T16:47:30 CET" name="setUp" finished-at="2021-02-15T16:47:34 CET" duration-ms="3595" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="BenefitsRedirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.BenefitsRedirectionTests@5dd6264]" started-at="2021-02-09T23:34:08 CET" name="BenefitsRedirection" finished-at="2021-02-09T23:34:25 CET" duration-ms="16983" status="PASS">
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@5dd6264]" started-at="2021-02-15T16:47:34 CET" name="redirection" finished-at="2021-02-15T16:47:50 CET" duration-ms="15991" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,12 +43,1228 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BenefitsRedirection -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.BenefitsRedirectionTests@5dd6264]" started-at="2021-02-09T23:34:25 CET" name="tearDown" finished-at="2021-02-09T23:34:26 CET" duration-ms="634" status="PASS">
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@5dd6264]" started-at="2021-02-15T16:47:50 CET" name="tearDown" finished-at="2021-02-15T16:47:51 CET" duration-ms="652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.zoomev.BenefitsRedirectionTests -->
+      </class> <!-- com.zoomev.RedirectionTests -->
     </test> <!-- redirectionsBenefitsToHomepage -->
+    <test started-at="2021-02-15T16:47:51 CET" name="redirectionsBenefitsToRent" finished-at="2021-02-15T16:47:59 CET" duration-ms="8059">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@460d0a57]" started-at="2021-02-15T16:47:51 CET" name="setUp" finished-at="2021-02-15T16:47:54 CET" duration-ms="3082" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@460d0a57]" started-at="2021-02-15T16:47:54 CET" name="redirection" finished-at="2021-02-15T16:47:58 CET" duration-ms="4306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/ev-benefits]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/rent-ev]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'Rent an EV']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - Rent EV]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@460d0a57]" started-at="2021-02-15T16:47:58 CET" name="tearDown" finished-at="2021-02-15T16:47:59 CET" duration-ms="669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsBenefitsToRent -->
+    <test started-at="2021-02-15T16:47:59 CET" name="redirectionsBenefitsToLend" finished-at="2021-02-15T16:48:07 CET" duration-ms="8348">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@6af93788]" started-at="2021-02-15T16:47:59 CET" name="setUp" finished-at="2021-02-15T16:48:02 CET" duration-ms="3123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@6af93788]" started-at="2021-02-15T16:48:02 CET" name="redirection" finished-at="2021-02-15T16:48:06 CET" duration-ms="4476" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/ev-benefits]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/lend-an-ev]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'Lend your EV']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - Lend an EV]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@6af93788]" started-at="2021-02-15T16:48:06 CET" name="tearDown" finished-at="2021-02-15T16:48:07 CET" duration-ms="747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsBenefitsToLend -->
+    <test started-at="2021-02-15T16:48:07 CET" name="redirectionsBenefitsToAboutUs" finished-at="2021-02-15T16:48:15 CET" duration-ms="8331">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@10e92f8f]" started-at="2021-02-15T16:48:07 CET" name="setUp" finished-at="2021-02-15T16:48:10 CET" duration-ms="3170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@10e92f8f]" started-at="2021-02-15T16:48:10 CET" name="redirection" finished-at="2021-02-15T16:48:15 CET" duration-ms="4477" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/ev-benefits]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/about-us]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'About us']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - About us]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@10e92f8f]" started-at="2021-02-15T16:48:15 CET" name="tearDown" finished-at="2021-02-15T16:48:15 CET" duration-ms="683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsBenefitsToAboutUs -->
+    <test started-at="2021-02-15T16:48:15 CET" name="redirectionsBenefitsToLogin" finished-at="2021-02-15T16:48:21 CET" duration-ms="5655">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@6fe7aac8]" started-at="2021-02-15T16:48:15 CET" name="setUp" finished-at="2021-02-15T16:48:18 CET" duration-ms="3107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@6fe7aac8]" started-at="2021-02-15T16:48:18 CET" name="redirection" finished-at="2021-02-15T16:48:20 CET" duration-ms="1899" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/ev-benefits]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/auth/login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - Login]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']"}
+  (Session info: chrome=88.0.4324.150)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B4F1N8E', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\micha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58664}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9d686620af5662e3527f4edb8dbe51ca
+*** Element info: {Using=xpath, value=//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']"}
+  (Session info: chrome=88.0.4324.150)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B4F1N8E', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\micha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58664}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9d686620af5662e3527f4edb8dbe51ca
+*** Element info: {Using=xpath, value=//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.zoomev.RedirectionTests.redirection(RedirectionTests.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@6fe7aac8]" started-at="2021-02-15T16:48:20 CET" name="tearDown" finished-at="2021-02-15T16:48:21 CET" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsBenefitsToLogin -->
+    <test started-at="2021-02-15T16:48:21 CET" name="redirectionsHomepageToBenefits" finished-at="2021-02-15T16:48:30 CET" duration-ms="8882">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@769f71a9]" started-at="2021-02-15T16:48:21 CET" name="setUp" finished-at="2021-02-15T16:48:24 CET" duration-ms="3151" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@769f71a9]" started-at="2021-02-15T16:48:24 CET" name="redirection" finished-at="2021-02-15T16:48:29 CET" duration-ms="5073" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/about-us]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'EV Benefits']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - EV Benefits]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Wrong URL! expected [https://dev.zoom-ev.com/about-us] but found [https://dev.zoom-ev.com/ev-benefits]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Wrong URL! expected [https://dev.zoom-ev.com/about-us] but found [https://dev.zoom-ev.com/ev-benefits]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.zoomev.RedirectionTests.redirection(RedirectionTests.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@769f71a9]" started-at="2021-02-15T16:48:29 CET" name="tearDown" finished-at="2021-02-15T16:48:30 CET" duration-ms="657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsHomepageToBenefits -->
+    <test started-at="2021-02-15T16:48:30 CET" name="redirectionsHomepageToRent" finished-at="2021-02-15T16:48:38 CET" duration-ms="8116">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@48e4374]" started-at="2021-02-15T16:48:30 CET" name="setUp" finished-at="2021-02-15T16:48:33 CET" duration-ms="3125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@48e4374]" started-at="2021-02-15T16:48:33 CET" name="redirection" finished-at="2021-02-15T16:48:37 CET" duration-ms="4321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/rent-ev]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'Rent an EV']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - Rent EV]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@48e4374]" started-at="2021-02-15T16:48:37 CET" name="tearDown" finished-at="2021-02-15T16:48:38 CET" duration-ms="669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsHomepageToRent -->
+    <test started-at="2021-02-15T16:48:38 CET" name="redirectionsHomepageToLend" finished-at="2021-02-15T16:48:47 CET" duration-ms="8902">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@3e2e18f2]" started-at="2021-02-15T16:48:38 CET" name="setUp" finished-at="2021-02-15T16:48:41 CET" duration-ms="3079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@3e2e18f2]" started-at="2021-02-15T16:48:41 CET" name="redirection" finished-at="2021-02-15T16:48:46 CET" duration-ms="5139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/lend-an-ev]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'Lend your EV']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - Lend an EV]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@3e2e18f2]" started-at="2021-02-15T16:48:46 CET" name="tearDown" finished-at="2021-02-15T16:48:47 CET" duration-ms="683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsHomepageToLend -->
+    <test started-at="2021-02-15T16:48:47 CET" name="redirectionsHomepageToAboutUs" finished-at="2021-02-15T16:48:56 CET" duration-ms="9287">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@2e4b8173]" started-at="2021-02-15T16:48:47 CET" name="setUp" finished-at="2021-02-15T16:48:50 CET" duration-ms="3108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@2e4b8173]" started-at="2021-02-15T16:48:50 CET" name="redirection" finished-at="2021-02-15T16:48:55 CET" duration-ms="5045" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/about-us]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'About us']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - About us]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@2e4b8173]" started-at="2021-02-15T16:48:55 CET" name="tearDown" finished-at="2021-02-15T16:48:56 CET" duration-ms="1132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsHomepageToAboutUs -->
+    <test started-at="2021-02-15T16:48:56 CET" name="redirectionsHomepageToLogin" finished-at="2021-02-15T16:49:01 CET" duration-ms="4999">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@34b7ac2f]" started-at="2021-02-15T16:48:56 CET" name="setUp" finished-at="2021-02-15T16:48:59 CET" duration-ms="3095" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@34b7ac2f]" started-at="2021-02-15T16:48:59 CET" name="redirection" finished-at="2021-02-15T16:49:01 CET" duration-ms="1254" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/auth/login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - Login]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']"}
+  (Session info: chrome=88.0.4324.150)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B4F1N8E', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\micha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58854}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ec5958c2acd8a4bd69fea9f9aeedc077
+*** Element info: {Using=xpath, value=//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']"}
+  (Session info: chrome=88.0.4324.150)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B4F1N8E', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\micha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58854}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ec5958c2acd8a4bd69fea9f9aeedc077
+*** Element info: {Using=xpath, value=//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.zoomev.RedirectionTests.redirection(RedirectionTests.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@34b7ac2f]" started-at="2021-02-15T16:49:01 CET" name="tearDown" finished-at="2021-02-15T16:49:01 CET" duration-ms="648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsHomepageToLogin -->
+    <test started-at="2021-02-15T16:49:01 CET" name="redirectionsRentToBenefits" finished-at="2021-02-15T16:49:10 CET" duration-ms="8793">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@67a20f67]" started-at="2021-02-15T16:49:01 CET" name="setUp" finished-at="2021-02-15T16:49:04 CET" duration-ms="3108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@67a20f67]" started-at="2021-02-15T16:49:04 CET" name="redirection" finished-at="2021-02-15T16:49:09 CET" duration-ms="5015" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/rent-ev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/ev-benefits]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'EV Benefits']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - EV Benefits]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@67a20f67]" started-at="2021-02-15T16:49:09 CET" name="tearDown" finished-at="2021-02-15T16:49:10 CET" duration-ms="670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsRentToBenefits -->
+    <test started-at="2021-02-15T16:49:10 CET" name="redirectionsRentToHomepage" finished-at="2021-02-15T16:49:19 CET" duration-ms="8855">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@6a400542]" started-at="2021-02-15T16:49:10 CET" name="setUp" finished-at="2021-02-15T16:49:13 CET" duration-ms="3092" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@6a400542]" started-at="2021-02-15T16:49:13 CET" name="redirection" finished-at="2021-02-15T16:49:18 CET" duration-ms="4490" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/rent-ev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//img[@alt='zoom logo colour long']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - Home]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@6a400542]" started-at="2021-02-15T16:49:18 CET" name="tearDown" finished-at="2021-02-15T16:49:19 CET" duration-ms="1270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsRentToHomepage -->
+    <test started-at="2021-02-15T16:49:19 CET" name="redirectionsRentToLend" finished-at="2021-02-15T16:49:28 CET" duration-ms="9501">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@1700915]" started-at="2021-02-15T16:49:19 CET" name="setUp" finished-at="2021-02-15T16:49:22 CET" duration-ms="3109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@1700915]" started-at="2021-02-15T16:49:22 CET" name="redirection" finished-at="2021-02-15T16:49:27 CET" duration-ms="5214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/rent-ev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/lend-an-ev]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'Lend your EV']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - Lend an EV]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@1700915]" started-at="2021-02-15T16:49:27 CET" name="tearDown" finished-at="2021-02-15T16:49:28 CET" duration-ms="1177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsRentToLend -->
+    <test started-at="2021-02-15T16:49:28 CET" name="redirectionsRentToAboutUs" finished-at="2021-02-15T16:49:37 CET" duration-ms="8777">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@1ddf84b8]" started-at="2021-02-15T16:49:28 CET" name="setUp" finished-at="2021-02-15T16:49:32 CET" duration-ms="3201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@1ddf84b8]" started-at="2021-02-15T16:49:32 CET" name="redirection" finished-at="2021-02-15T16:49:36 CET" duration-ms="4935" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/rent-ev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/about-us]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'About us']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - About us]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@1ddf84b8]" started-at="2021-02-15T16:49:36 CET" name="tearDown" finished-at="2021-02-15T16:49:37 CET" duration-ms="639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsRentToAboutUs -->
+    <test started-at="2021-02-15T16:49:37 CET" name="redirectionsRentToLogin" finished-at="2021-02-15T16:49:43 CET" duration-ms="6089">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@1817d444]" started-at="2021-02-15T16:49:37 CET" name="setUp" finished-at="2021-02-15T16:49:40 CET" duration-ms="3141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@1817d444]" started-at="2021-02-15T16:49:40 CET" name="redirection" finished-at="2021-02-15T16:49:42 CET" duration-ms="1792" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/rent-ev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/auth/login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - Login]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']"}
+  (Session info: chrome=88.0.4324.150)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B4F1N8E', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\micha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b7f1ed0e742b2e0dbacfd64a52f31aa6
+*** Element info: {Using=xpath, value=//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']"}
+  (Session info: chrome=88.0.4324.150)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B4F1N8E', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\micha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b7f1ed0e742b2e0dbacfd64a52f31aa6
+*** Element info: {Using=xpath, value=//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.zoomev.RedirectionTests.redirection(RedirectionTests.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@1817d444]" started-at="2021-02-15T16:49:42 CET" name="tearDown" finished-at="2021-02-15T16:49:43 CET" duration-ms="1155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsRentToLogin -->
+    <test started-at="2021-02-15T16:49:43 CET" name="redirectionsLendToBenefits" finished-at="2021-02-15T16:49:52 CET" duration-ms="9055">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@41e36e46]" started-at="2021-02-15T16:49:43 CET" name="setUp" finished-at="2021-02-15T16:49:46 CET" duration-ms="3106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@41e36e46]" started-at="2021-02-15T16:49:46 CET" name="redirection" finished-at="2021-02-15T16:49:52 CET" duration-ms="5274" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/lend-an-ev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/about-us]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'EV Benefits']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - EV Benefits]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Wrong URL! expected [https://dev.zoom-ev.com/about-us] but found [https://dev.zoom-ev.com/ev-benefits]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Wrong URL! expected [https://dev.zoom-ev.com/about-us] but found [https://dev.zoom-ev.com/ev-benefits]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.zoomev.RedirectionTests.redirection(RedirectionTests.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@41e36e46]" started-at="2021-02-15T16:49:52 CET" name="tearDown" finished-at="2021-02-15T16:49:52 CET" duration-ms="673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsLendToBenefits -->
+    <test started-at="2021-02-15T16:49:52 CET" name="redirectionsLendToRent" finished-at="2021-02-15T16:50:00 CET" duration-ms="8193">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@31c88ec8]" started-at="2021-02-15T16:49:52 CET" name="setUp" finished-at="2021-02-15T16:49:55 CET" duration-ms="3154" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@31c88ec8]" started-at="2021-02-15T16:49:55 CET" name="redirection" finished-at="2021-02-15T16:50:00 CET" duration-ms="4324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/lend-an-ev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/rent-ev]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'Rent an EV']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - Rent EV]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@31c88ec8]" started-at="2021-02-15T16:50:00 CET" name="tearDown" finished-at="2021-02-15T16:50:00 CET" duration-ms="714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsLendToRent -->
+    <test started-at="2021-02-15T16:50:00 CET" name="redirectionsLendToHomepage" finished-at="2021-02-15T16:50:10 CET" duration-ms="9102">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@3427b02d]" started-at="2021-02-15T16:50:00 CET" name="setUp" finished-at="2021-02-15T16:50:04 CET" duration-ms="3168" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@3427b02d]" started-at="2021-02-15T16:50:04 CET" name="redirection" finished-at="2021-02-15T16:50:09 CET" duration-ms="5278" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/lend-an-ev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//img[@alt='zoom logo colour long']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - Home]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@3427b02d]" started-at="2021-02-15T16:50:09 CET" name="tearDown" finished-at="2021-02-15T16:50:10 CET" duration-ms="655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsLendToHomepage -->
+    <test started-at="2021-02-15T16:50:10 CET" name="redirectionsLendToAboutUs" finished-at="2021-02-15T16:50:18 CET" duration-ms="8826">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@2c767a52]" started-at="2021-02-15T16:50:10 CET" name="setUp" finished-at="2021-02-15T16:50:13 CET" duration-ms="3168" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@2c767a52]" started-at="2021-02-15T16:50:13 CET" name="redirection" finished-at="2021-02-15T16:50:18 CET" duration-ms="4956" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/lend-an-ev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/about-us]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'About us']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - About us]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@2c767a52]" started-at="2021-02-15T16:50:18 CET" name="tearDown" finished-at="2021-02-15T16:50:18 CET" duration-ms="700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsLendToAboutUs -->
+    <test started-at="2021-02-15T16:50:18 CET" name="redirectionsLendToLogin" finished-at="2021-02-15T16:50:24 CET" duration-ms="5518">
+      <class name="com.zoomev.RedirectionTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@291ae]" started-at="2021-02-15T16:50:18 CET" name="setUp" finished-at="2021-02-15T16:50:21 CET" duration-ms="3097" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="redirection(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoomev.RedirectionTests@291ae]" started-at="2021-02-15T16:50:21 CET" name="redirection" finished-at="2021-02-15T16:50:23 CET" duration-ms="1245" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/lend-an-ev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.zoom-ev.com/auth/login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zoomev - Login]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']"}
+  (Session info: chrome=88.0.4324.150)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B4F1N8E', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\micha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59231}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ea10a0fdd3d4f7b9a52b311bfdba5b15
+*** Element info: {Using=xpath, value=//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']"}
+  (Session info: chrome=88.0.4324.150)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B4F1N8E', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\micha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59231}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ea10a0fdd3d4f7b9a52b311bfdba5b15
+*** Element info: {Using=xpath, value=//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.zoomev.RedirectionTests.redirection(RedirectionTests.java:55)
+at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zoomev.RedirectionTests@291ae]" started-at="2021-02-15T16:50:23 CET" name="tearDown" finished-at="2021-02-15T16:50:24 CET" duration-ms="1175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </test> <!-- redirectionsLendToLogin -->
   </suite> <!-- AllTests -->
 </testng-results>

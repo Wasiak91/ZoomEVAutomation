@@ -2,64 +2,293 @@
 
 <suite name="AllTests" verbose="1">
 	<test name="redirectionsBenefitsToHomepage">
-			<parameter name="browser"
-			value="chrome" />
+		<parameter name="browser" value="chrome" />
 		<parameter name="startUrl"
 			value="https://dev.zoom-ev.com/ev-benefits" />
-						<parameter name="redirectButton" 
+		<parameter name="redirectButton"
 			value="//img[@alt='zoom logo colour long']" />
-			<parameter name="targetUrl" 
-			value="https://dev.zoom-ev.com/" />
+		<parameter name="targetUrl" value="https://dev.zoom-ev.com/" />
 		<parameter name="expectedPageName" value="Zoomev - Home" />
 		<classes>
-			<class name="com.zoomev.BenefitsRedirectionTests" />
+			<class name="com.zoomev.RedirectionTests" />
 		</classes>
 	</test>
 
-<test name="redirectionsBenefitsToRent">
-			<parameter name="browser"
-			value="chrome" />
+	<test name="redirectionsBenefitsToRent">
+		<parameter name="browser" value="chrome" />
 		<parameter name="startUrl"
 			value="https://dev.zoom-ev.com/ev-benefits" />
-						<parameter name="redirectButton" 
+		<parameter name="redirectButton"
 			value="//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'Rent an EV']" />
-			<parameter name="targetUrl" 
+		<parameter name="targetUrl"
 			value="https://dev.zoom-ev.com/rent-ev" />
 		<parameter name="expectedPageName" value="Zoomev - Rent EV" />
 		<classes>
-			<class name="com.zoomev.BenefitsRedirectionTests" />
+			<class name="com.zoomev.RedirectionTests" />
 		</classes>
 	</test>
 
-<test name="redirectionsBenefitsToLend">
-			<parameter name="browser"
-			value="chrome" />
+	<test name="redirectionsBenefitsToLend">
+		<parameter name="browser" value="chrome" />
 		<parameter name="startUrl"
 			value="https://dev.zoom-ev.com/ev-benefits" />
-						<parameter name="redirectButton" 
+		<parameter name="redirectButton"
 			value="//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'Lend your EV']" />
-			<parameter name="targetUrl" 
+		<parameter name="targetUrl"
 			value="https://dev.zoom-ev.com/lend-an-ev" />
-		<parameter name="expectedPageName" value="Zoomev - Lend an EV" />
+		<parameter name="expectedPageName"
+			value="Zoomev - Lend an EV" />
 		<classes>
-			<class name="com.zoomev.BenefitsRedirectionTests" />
+			<class name="com.zoomev.RedirectionTests" />
 		</classes>
 	</test>
 
-<test name="redirectionsBenefitsToAboutUs">
-			<parameter name="browser"
-			value="chrome" />
+	<test name="redirectionsBenefitsToAboutUs">
+		<parameter name="browser" value="chrome" />
 		<parameter name="startUrl"
 			value="https://dev.zoom-ev.com/ev-benefits" />
-						<parameter name="redirectButton" 
+		<parameter name="redirectButton"
 			value="//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'About us']" />
-			<parameter name="targetUrl" 
+		<parameter name="targetUrl"
 			value="https://dev.zoom-ev.com/about-us" />
 		<parameter name="expectedPageName" value="Zoomev - About us" />
 		<classes>
-			<class name="com.zoomev.BenefitsRedirectionTests" />
+			<class name="com.zoomev.RedirectionTests" />
 		</classes>
 	</test>
+
+	<test name="redirectionsBenefitsToLogin">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl"
+			value="https://dev.zoom-ev.com/ev-benefits" />
+		<parameter name="redirectButton"
+			value="//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']" />
+		<parameter name="targetUrl"
+			value="https://dev.zoom-ev.com/auth/login" />
+		<parameter name="expectedPageName" value="Zoomev - Login" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
+	<test name="redirectionsHomepageToBenefits">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl" value="https://dev.zoom-ev.com/" />
+		<parameter name="redirectButton"
+			value="//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'EV Benefits']" />
+		<parameter name="targetUrl"
+			value="https://dev.zoom-ev.com/ev-benefits" />
+		<parameter name="expectedPageName"
+			value="Zoomev - EV Benefits" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
+
+	<test name="redirectionsHomepageToRent">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl" value="https://dev.zoom-ev.com/" />
+		<parameter name="redirectButton"
+			value="//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'Rent an EV']" />
+		<parameter name="targetUrl"
+			value="https://dev.zoom-ev.com/rent-ev" />
+		<parameter name="expectedPageName" value="Zoomev - Rent EV" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
+
+
+	<test name="redirectionsHomepageToLend">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl" value="https://dev.zoom-ev.com/" />
+		<parameter name="redirectButton"
+			value="//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'Lend your EV']" />
+		<parameter name="targetUrl"
+			value="https://dev.zoom-ev.com/lend-an-ev" />
+		<parameter name="expectedPageName"
+			value="Zoomev - Lend an EV" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
+	<test name="redirectionsHomepageToAboutUs">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl" value="https://dev.zoom-ev.com/" />
+		<parameter name="redirectButton" value="//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'About us']" />
+		<parameter name="targetUrl"
+			value="https://dev.zoom-ev.com/about-us" />
+		<parameter name="expectedPageName" value="Zoomev - About us" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
+
+	<test name="redirectionsHomepageToLogin">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl" value="https://dev.zoom-ev.com" />
+		<parameter name="redirectButton"
+			value="//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']" />
+		<parameter name="targetUrl"
+			value="https://dev.zoom-ev.com/auth/login" />
+		<parameter name="expectedPageName" value="Zoomev - Login" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
+	<test name="redirectionsRentToBenefits">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl"
+			value="https://dev.zoom-ev.com/rent-ev" />
+		<parameter name="redirectButton"
+			value="//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'EV Benefits']" />
+		<parameter name="targetUrl"
+			value="https://dev.zoom-ev.com/ev-benefits" />
+		<parameter name="expectedPageName"
+			value="Zoomev - EV Benefits" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
+
+	<test name="redirectionsRentToHomepage">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl"
+			value="https://dev.zoom-ev.com/rent-ev" />
+		<parameter name="redirectButton"
+			value="//img[@alt='zoom logo colour long']" />
+		<parameter name="targetUrl" value="https://dev.zoom-ev.com/" />
+		<parameter name="expectedPageName" value="Zoomev - Home" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
+
+	<test name="redirectionsRentToLend">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl"
+			value="https://dev.zoom-ev.com/rent-ev" />
+		<parameter name="redirectButton"
+			value="//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'Lend your EV']" />
+		<parameter name="targetUrl"
+			value="https://dev.zoom-ev.com/lend-an-ev" />
+		<parameter name="expectedPageName"
+			value="Zoomev - Lend an EV" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
+	<test name="redirectionsRentToAboutUs">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl"
+			value="https://dev.zoom-ev.com/rent-ev" />
+		<parameter name="redirectButton"
+			value="//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'About us']" />
+		<parameter name="targetUrl"
+			value="https://dev.zoom-ev.com/about-us" />
+		<parameter name="expectedPageName" value="Zoomev - About us" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
+
+	<test name="redirectionsRentToLogin">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl"
+			value="https://dev.zoom-ev.com/rent-ev" />
+		<parameter name="redirectButton"
+			value="//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']" />
+		<parameter name="targetUrl"
+			value="https://dev.zoom-ev.com/auth/login" />
+		<parameter name="expectedPageName" value="Zoomev - Login" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
+	<test name="redirectionsLendToBenefits">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl"
+			value="https://dev.zoom-ev.com/lend-an-ev" />
+		<parameter name="redirectButton"
+			value="//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'EV Benefits']" />
+		<parameter name="targetUrl"
+			value="https://dev.zoom-ev.com/about-us" />
+		<parameter name="expectedPageName"
+			value="Zoomev - EV Benefits" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
+
+	<test name="redirectionsLendToRent">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl"
+			value="https://dev.zoom-ev.com/lend-an-ev" />
+		<parameter name="redirectButton"
+			value="//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'Rent an EV']" />
+		<parameter name="targetUrl"
+			value="https://dev.zoom-ev.com/rent-ev" />
+		<parameter name="expectedPageName" value="Zoomev - Rent EV" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
+
+
+	<test name="redirectionsLendToHomepage">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl"
+			value="https://dev.zoom-ev.com/lend-an-ev" />
+		<parameter name="redirectButton"
+			value="//img[@alt='zoom logo colour long']" />
+		<parameter name="targetUrl" value="https://dev.zoom-ev.com/" />
+		<parameter name="expectedPageName" value="Zoomev - Home" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
+	<test name="redirectionsLendToAboutUs">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl"
+			value="https://dev.zoom-ev.com/lend-an-ev" />
+		<parameter name="redirectButton"
+			value="//a[contains(@class, 'StyledLinkstyled__Link-sc-1q9nco8-2') and text() = 'About us']" />
+		<parameter name="targetUrl"
+			value="https://dev.zoom-ev.com/about-us" />
+		<parameter name="expectedPageName" value="Zoomev - About us" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
+
+	<test name="redirectionsLendToLogin">
+		<parameter name="browser" value="chrome" />
+		<parameter name="startUrl"
+			value="https://dev.zoom-ev.com/lend-an-ev" />
+		<parameter name="redirectButton"
+			value="//a[contains(@class, 'Buttonstyled__StyledButton-bgtx2p-2 hUHjSM') and text() = 'Register / Log in']" />
+		<parameter name="targetUrl"
+			value="https://dev.zoom-ev.com/auth/login" />
+		<parameter name="expectedPageName" value="Zoomev - Login" />
+		<classes>
+			<class name="com.zoomev.RedirectionTests" />
+		</classes>
+	</test>
+
 </suite>
 
 

@@ -1,34 +1,34 @@
 package com.zoomev;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-public class ContactPage {
+import com.zoomev.base.TestUtilities;
+
+public class ContactPage extends TestUtilities{
 	private WebDriver driver;
 	
-	
-	@Parameters({ "browser" })
-	@BeforeMethod(alwaysRun = true)
-	private void SetUp(@Optional("Chrome") String browser) {
-		switch (browser) {
-		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-			driver = new ChromeDriver();
-			break;
+	public void validation() {
+		System.out.println("Starting checking mandatory fields at contact page");
+		
+		driver.get("https://dev.zoom-ev.com/contact");
+		
+		WebElement submitButton = driver.findElement(By.xpath("//button[@type='submit']"));
+		submitButton.click();
+		
+		Assert.assertTrue(driver.findElement(By.xpath("//div[contains(@class, 'TextFieldstyled__Error-h5bljy-2') and text() = 'Required']")).isDisplayed(),
+				"required label is not visible");
 
-		case "firefox":
-			System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
-			driver = new FirefoxDriver();
-			break;
-
-		default:
-			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-			driver = new ChromeDriver();
-			break;
-
-		}
+		
 	}
-}
+
+
+	}
+

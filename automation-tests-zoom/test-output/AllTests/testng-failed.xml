@@ -1,20 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [AllTests]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="redirectionsBenefitsToHomepage(failed)">
+  <test thread-count="5" name="redirectionsBenefitsToLogin(failed)">
     <parameter name="startUrl" value="https://dev.zoom-ev.com/ev-benefits"/>
     <parameter name="browser" value="chrome"/>
-    <parameter name="redirectButton" value="//img[@alt=&#039;zoom logo colour long&#039;])"/>
-    <parameter name="expectedPageName" value="Zoomev - Home"/>
-    <parameter name="targetUrl" value="https://dev.zoom-ev.com/"/>
+    <parameter name="redirectButton" value="//a[contains(@class, &#039;Buttonstyled__StyledButton-bgtx2p-2 hUHjSM&#039;) and text() = &#039;Register / Log in&#039;]"/>
+    <parameter name="expectedPageName" value="Zoomev - Login"/>
+    <parameter name="targetUrl" value="https://dev.zoom-ev.com/auth/login"/>
     <classes>
-      <class name="com.zoomev.BenefitsRedirectionTests">
+      <class name="com.zoomev.RedirectionTests">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="BenefitsRedirection" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="redirection" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.zoomev.BenefitsRedirectionTests -->
+      </class> <!-- com.zoomev.RedirectionTests -->
     </classes>
-  </test> <!-- redirectionsBenefitsToHomepage(failed) -->
+  </test> <!-- redirectionsBenefitsToLogin(failed) -->
+  <test thread-count="5" name="redirectionsHomepageToLogin(failed)">
+    <parameter name="startUrl" value="https://dev.zoom-ev.com"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="redirectButton" value="//a[contains(@class, &#039;Buttonstyled__StyledButton-bgtx2p-2 hUHjSM&#039;) and text() = &#039;Register / Log in&#039;]"/>
+    <parameter name="expectedPageName" value="Zoomev - Login"/>
+    <parameter name="targetUrl" value="https://dev.zoom-ev.com/auth/login"/>
+    <classes>
+      <class name="com.zoomev.RedirectionTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="redirection" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </classes>
+  </test> <!-- redirectionsHomepageToLogin(failed) -->
+  <test thread-count="5" name="redirectionsRentToLogin(failed)">
+    <parameter name="startUrl" value="https://dev.zoom-ev.com/rent-ev"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="redirectButton" value="//a[contains(@class, &#039;Buttonstyled__StyledButton-bgtx2p-2 hUHjSM&#039;) and text() = &#039;Register / Log in&#039;]"/>
+    <parameter name="expectedPageName" value="Zoomev - Login"/>
+    <parameter name="targetUrl" value="https://dev.zoom-ev.com/auth/login"/>
+    <classes>
+      <class name="com.zoomev.RedirectionTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="redirection" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </classes>
+  </test> <!-- redirectionsRentToLogin(failed) -->
+  <test thread-count="5" name="redirectionsLendToBenefits(failed)">
+    <parameter name="startUrl" value="https://dev.zoom-ev.com/lend-an-ev"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="redirectButton" value="//a[contains(@class, &#039;StyledLinkstyled__Link-sc-1q9nco8-2&#039;) and text() = &#039;EV Benefits&#039;]"/>
+    <parameter name="expectedPageName" value="Zoomev - EV Benefits"/>
+    <parameter name="targetUrl" value="https://dev.zoom-ev.com/about-us"/>
+    <classes>
+      <class name="com.zoomev.RedirectionTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="redirection" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </classes>
+  </test> <!-- redirectionsLendToBenefits(failed) -->
+  <test thread-count="5" name="redirectionsLendToLogin(failed)">
+    <parameter name="startUrl" value="https://dev.zoom-ev.com/lend-an-ev"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="redirectButton" value="//a[contains(@class, &#039;Buttonstyled__StyledButton-bgtx2p-2 hUHjSM&#039;) and text() = &#039;Register / Log in&#039;]"/>
+    <parameter name="expectedPageName" value="Zoomev - Login"/>
+    <parameter name="targetUrl" value="https://dev.zoom-ev.com/auth/login"/>
+    <classes>
+      <class name="com.zoomev.RedirectionTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="redirection" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.zoomev.RedirectionTests -->
+    </classes>
+  </test> <!-- redirectionsLendToLogin(failed) -->
 </suite> <!-- Failed suite [AllTests] -->

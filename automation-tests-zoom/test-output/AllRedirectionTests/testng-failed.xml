@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [AllRedirectionTests]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="redirectionsBenefitsToLogin(failed)">
+<suite parallel="tests" name="Failed suite [AllRedirectionTests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="redirectionsBenefitsToLogin(failed)">
     <parameter name="startUrl" value="https://dev.zoom-ev.com/ev-benefits"/>
     <parameter name="browser" value="chrome"/>
     <parameter name="redirectButton" value="//a[contains(@class, &#039;Buttonstyled__StyledButton-bgtx2p-2&#039;) and text() = &#039;Register / Log in&#039;]"/>
@@ -17,7 +17,7 @@
       </class> <!-- com.zoomev.redirectiontests.RedirectionTests -->
     </classes>
   </test> <!-- redirectionsBenefitsToLogin(failed) -->
-  <test thread-count="5" name="redirectionsHomepageToLogin(failed)">
+  <test thread-count="5" parallel="tests" name="redirectionsHomepageToLogin(failed)">
     <parameter name="startUrl" value="https://dev.zoom-ev.com"/>
     <parameter name="browser" value="chrome"/>
     <parameter name="redirectButton" value="//a[contains(@class, &#039;Buttonstyled__StyledButton-bgtx2p-2&#039;) and text() = &#039;Register / Log in&#039;]"/>
@@ -33,7 +33,7 @@
       </class> <!-- com.zoomev.redirectiontests.RedirectionTests -->
     </classes>
   </test> <!-- redirectionsHomepageToLogin(failed) -->
-  <test thread-count="5" name="redirectionsRentToLogin(failed)">
+  <test thread-count="5" parallel="tests" name="redirectionsRentToLogin(failed)">
     <parameter name="startUrl" value="https://dev.zoom-ev.com/rent-ev"/>
     <parameter name="browser" value="chrome"/>
     <parameter name="redirectButton" value="//a[contains(@class, &#039;Buttonstyled__StyledButton-bgtx2p-2&#039;) and text() = &#039;Register / Log in&#039;]"/>
@@ -49,7 +49,7 @@
       </class> <!-- com.zoomev.redirectiontests.RedirectionTests -->
     </classes>
   </test> <!-- redirectionsRentToLogin(failed) -->
-  <test thread-count="5" name="redirectionsLendToLogin(failed)">
+  <test thread-count="5" parallel="tests" name="redirectionsLendToLogin(failed)">
     <parameter name="startUrl" value="https://dev.zoom-ev.com/lend-an-ev"/>
     <parameter name="browser" value="chrome"/>
     <parameter name="redirectButton" value="//a[contains(@class, &#039;Buttonstyled__StyledButton-bgtx2p-2&#039;) and text() = &#039;Register / Log in&#039;]"/>

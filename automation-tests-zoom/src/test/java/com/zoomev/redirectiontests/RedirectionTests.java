@@ -1,5 +1,7 @@
 package com.zoomev.redirectiontests;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -15,26 +17,30 @@ public class RedirectionTests extends TestUtilities{
 	@Test
 	public void redirection(String startUrl, String targetUrl,String redirectButton, String expectedPageName) {
 
-		System.out.println("Starting redirection test from " + startUrl + " to " + targetUrl);
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);	
+		
+		log.info("Starting redirection test from " + startUrl + " to " + targetUrl);
+		
 		
 		// open test page
 		driver.get(startUrl);
+		log.info("Page" + startUrl +" is open");
 
 		// click button
-		WebElement zoomLogo = driver.findElement(By.xpath(redirectButton));
-		zoomLogo.click();
-
-		sleep(2000);
+		WebElement button = driver.findElement(By.xpath(redirectButton));
+		button.click();
+		log.info("Redirect button was found and clicked");
 
 		// checking URL
 		String actualUrl = driver.getCurrentUrl();
-
 		Assert.assertEquals(actualUrl, targetUrl, "Wrong URL!");
+		
+		log.info("Page was checked and is correct" );
 
 		// Checking pagetitle
 		String actualTitle = driver.getTitle();
 		Assert.assertEquals(actualTitle, expectedPageName, "Wrong page title!");
-
+		log.info("Page title was checked and is correct" );
 	}
 	
 	

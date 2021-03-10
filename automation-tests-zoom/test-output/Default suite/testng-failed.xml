@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.zoomev.BenefitsRedirectionTests">
+      <class name="com.zoomev.redirectiontests.RedirectionTests">
         <methods>
-          <include name="tearDown"/>
+          <include name="redirection"/>
           <include name="setUp"/>
-          <include name="BenefitsRedirection"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.zoomev.BenefitsRedirectionTests -->
+      </class> <!-- com.zoomev.redirectiontests.RedirectionTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
